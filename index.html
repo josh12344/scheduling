@@ -1,11 +1,12 @@
 <?php
 session_start();
 if (isset($_SESSION["user"])) {
-     // Get the user's name from the session
-     $loggedInFullName = $_SESSION["fullname"];
-   header("Location: employeepage.php");
+    // Get the user's name from the session
+    $loggedInFullName = $_SESSION["fullname"];
+    header("Location: employeepage.php");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
